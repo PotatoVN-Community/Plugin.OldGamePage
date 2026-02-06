@@ -1,0 +1,21 @@
+{
+  "GalgamePage_Developers.Text": "Developers",
+  "GalgamePage_LastPlayTime.Text": "Last played",
+  "GalgamePage_TotalPlayTime.Text": "Total play time",
+  "GalgamePage_SavePosition.Text": "Save location",
+  "GalgamePage_ExpectedPlayTime.Text": "Expected play time",
+  "GalgamePage_ReleaseDate.Text": "Release date",
+
+  "GalgamePage_Description.Text": "Description",
+  "GalgamePage_Tags.Text": "Tags",
+  "GalgamePage_Characters.Text": "Characters",
+  "GalgamePage_Staffs.Text": "Staff",
+
+  "GameCharacterPanel_AddCharacter.Text": "Add character",
+  "GameCharacterPanel_DeleteCharacter.Text": "Delete character",
+
+  "GalgamePage_PlayStatusPanel.Text": "Play status",
+  "GalgamePage_PlayCount.Text": "Play count",
+  "GalgamePage_GamePlayStatusPanel_MyRating.Text": "My rating",
+  "GalgamePage_GamePlayStatusPanel_MyComment.Text": "My comment"
+}

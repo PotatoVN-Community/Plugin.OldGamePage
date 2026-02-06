@@ -1,0 +1,21 @@
+{
+  "GalgamePage_Developers.Text": "開発元",
+  "GalgamePage_LastPlayTime.Text": "最終プレイ",
+  "GalgamePage_TotalPlayTime.Text": "総プレイ時間",
+  "GalgamePage_SavePosition.Text": "セーブ場所",
+  "GalgamePage_ExpectedPlayTime.Text": "予想プレイ時間",
+  "GalgamePage_ReleaseDate.Text": "発売日",
+
+  "GalgamePage_Description.Text": "紹介",
+  "GalgamePage_Tags.Text": "タグ",
+  "GalgamePage_Characters.Text": "キャラクター",
+  "GalgamePage_Staffs.Text": "スタッフ",
+
+  "GameCharacterPanel_AddCharacter.Text": "キャラ追加",
+  "GameCharacterPanel_DeleteCharacter.Text": "キャラ削除",
+
+  "GalgamePage_PlayStatusPanel.Text": "プレイ情報",
+  "GalgamePage_PlayCount.Text": "プレイ回数",
+  "GalgamePage_GamePlayStatusPanel_MyRating.Text": "自分の評価",
+  "GalgamePage_GamePlayStatusPanel_MyComment.Text": "自分のコメント"
+}

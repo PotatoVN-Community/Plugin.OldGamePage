@@ -1,0 +1,21 @@
+{
+  "GalgamePage_Developers.Text": "开发商",
+  "GalgamePage_LastPlayTime.Text": "上次游玩",
+  "GalgamePage_TotalPlayTime.Text": "总时长",
+  "GalgamePage_SavePosition.Text": "存档位置",
+  "GalgamePage_ExpectedPlayTime.Text": "预计时长",
+  "GalgamePage_ReleaseDate.Text": "发布日期",
+
+  "GalgamePage_Description.Text": "简介",
+  "GalgamePage_Tags.Text": "标签",
+  "GalgamePage_Characters.Text": "角色",
+  "GalgamePage_Staffs.Text": "Staff",
+
+  "GameCharacterPanel_AddCharacter.Text": "添加角色",
+  "GameCharacterPanel_DeleteCharacter.Text": "删除角色",
+
+  "GalgamePage_PlayStatusPanel.Text": "游玩信息",
+  "GalgamePage_PlayCount.Text": "游玩次数",
+  "GalgamePage_GamePlayStatusPanel_MyRating.Text": "我的评分",
+  "GalgamePage_GamePlayStatusPanel_MyComment.Text": "我的评价"
+}

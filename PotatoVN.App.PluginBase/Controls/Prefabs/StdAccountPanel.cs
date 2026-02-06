@@ -57,13 +57,13 @@ public sealed class StdAccountPanel : UserControl
         // 外层 Expander
         _expander = new Expander
         {
-            Margin = new Thickness(0, 0, 0, 10),
+            Margin = new Microsoft.UI.Xaml.Thickness(0, 0, 0, 10),
             HorizontalAlignment = HorizontalAlignment.Stretch,
             HorizontalContentAlignment = HorizontalAlignment.Stretch,
             IsExpanded = expand
         };
         // Header Grid
-        var headerGrid = new Grid { Padding = new Thickness(0, 18, 0, 18) };
+        var headerGrid = new Grid { Padding = new Microsoft.UI.Xaml.Thickness(0, 18, 0, 18) };
         headerGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = GridLength.Auto });
         headerGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
         // 头像
@@ -81,13 +81,13 @@ public sealed class StdAccountPanel : UserControl
         Grid.SetColumn(avatarBorder, 0);
         // 文本堆栈
         _titleText = new TextBlock { Text = title, FontSize = 18 };
-        _userNameText = new TextBlock { Text = userName, Margin = new Thickness(0, 0, 0, 5) };
+        _userNameText = new TextBlock { Text = userName, Margin = new Microsoft.UI.Xaml.Thickness(0, 0, 0, 5) };
         _descText = new TextBlock { Text = description, FontSize = 12, Opacity = 0.6 };
 
         var textStack = new StackPanel
         {
             Orientation = Orientation.Vertical,
-            Margin = new Thickness(10, 10, 0, 0),
+            Margin = new Microsoft.UI.Xaml.Thickness(10, 10, 0, 0),
             HorizontalAlignment = HorizontalAlignment.Left
         };
         textStack.Children.Add(_titleText);
