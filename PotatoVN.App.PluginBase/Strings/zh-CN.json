@@ -17,5 +17,34 @@
   "GalgamePage_PlayStatusPanel.Text": "游玩信息",
   "GalgamePage_PlayCount.Text": "游玩次数",
   "GalgamePage_GamePlayStatusPanel_MyRating.Text": "我的评分",
-  "GalgamePage_GamePlayStatusPanel_MyComment.Text": "我的评价"
+  "GalgamePage_GamePlayStatusPanel_MyComment.Text": "我的评价",
+
+  "OldGamePage_SettingsDialog_Title.Text": "详情页设置",
+  "OldGamePage_SettingsDialog_Save.Text": "保存",
+  "OldGamePage_SettingsDialog_Cancel.Text": "取消",
+
+  "OldGamePage_Settings_On.Text": "开",
+  "OldGamePage_Settings_Off.Text": "关",
+
+  "OldGamePage_SettingsDialog_VisibleSection.Text": "显示",
+
+  "OldGamePage_Settings_ShowDescription_Title.Text": "简介",
+  "OldGamePage_Settings_ShowDescription_Desc.Text": "是否显示简介面板",
+  "OldGamePage_Settings_ShowTag_Title.Text": "标签",
+  "OldGamePage_Settings_ShowTag_Desc.Text": "是否显示标签面板",
+  "OldGamePage_Settings_ShowCharacter_Title.Text": "角色",
+  "OldGamePage_Settings_ShowCharacter_Desc.Text": "是否显示角色面板",
+  "OldGamePage_Settings_ShowStaff_Title.Text": "Staff",
+  "OldGamePage_Settings_ShowStaff_Desc.Text": "是否显示 Staff 面板",
+
+  "OldGamePage_SettingsDialog_OrderSection.Text": "面板顺序",
+  "OldGamePage_SettingsDialog_MoveUp.Text": "上移",
+  "OldGamePage_SettingsDialog_MoveDown.Text": "下移",
+  "OldGamePage_SettingsDialog_ResetOrder.Text": "重置",
+
+  "OldGamePage_Panel_Header.Text": "基本信息",
+  "OldGamePage_Panel_Description.Text": "简介",
+  "OldGamePage_Panel_Tag.Text": "标签",
+  "OldGamePage_Panel_Character.Text": "角色",
+  "OldGamePage_Panel_Staff.Text": "Staff"
 }

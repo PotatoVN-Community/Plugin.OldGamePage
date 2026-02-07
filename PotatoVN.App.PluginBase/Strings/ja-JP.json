@@ -17,5 +17,34 @@
   "GalgamePage_PlayStatusPanel.Text": "プレイ情報",
   "GalgamePage_PlayCount.Text": "プレイ回数",
   "GalgamePage_GamePlayStatusPanel_MyRating.Text": "自分の評価",
-  "GalgamePage_GamePlayStatusPanel_MyComment.Text": "自分のコメント"
+  "GalgamePage_GamePlayStatusPanel_MyComment.Text": "自分のコメント",
+
+  "OldGamePage_SettingsDialog_Title.Text": "詳細ページ設定",
+  "OldGamePage_SettingsDialog_Save.Text": "保存",
+  "OldGamePage_SettingsDialog_Cancel.Text": "キャンセル",
+
+  "OldGamePage_Settings_On.Text": "オン",
+  "OldGamePage_Settings_Off.Text": "オフ",
+
+  "OldGamePage_SettingsDialog_VisibleSection.Text": "表示",
+
+  "OldGamePage_Settings_ShowDescription_Title.Text": "紹介",
+  "OldGamePage_Settings_ShowDescription_Desc.Text": "紹介パネルを表示する",
+  "OldGamePage_Settings_ShowTag_Title.Text": "タグ",
+  "OldGamePage_Settings_ShowTag_Desc.Text": "タグパネルを表示する",
+  "OldGamePage_Settings_ShowCharacter_Title.Text": "キャラクター",
+  "OldGamePage_Settings_ShowCharacter_Desc.Text": "キャラクターパネルを表示する",
+  "OldGamePage_Settings_ShowStaff_Title.Text": "スタッフ",
+  "OldGamePage_Settings_ShowStaff_Desc.Text": "スタッフパネルを表示する",
+
+  "OldGamePage_SettingsDialog_OrderSection.Text": "パネル順（上から下）",
+  "OldGamePage_SettingsDialog_MoveUp.Text": "上へ",
+  "OldGamePage_SettingsDialog_MoveDown.Text": "下へ",
+  "OldGamePage_SettingsDialog_ResetOrder.Text": "リセット",
+
+  "OldGamePage_Panel_Header.Text": "基本情報",
+  "OldGamePage_Panel_Description.Text": "紹介",
+  "OldGamePage_Panel_Tag.Text": "タグ",
+  "OldGamePage_Panel_Character.Text": "キャラクター",
+  "OldGamePage_Panel_Staff.Text": "スタッフ"
 }

@@ -2,7 +2,6 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 using GalgameManager.WinApp.Base.Contracts;
-using GalgameManager.WinApp.Base.Contracts.PluginUi;
 using GalgameManager.WinApp.Base.Models;
 using PotatoVN.App.PluginBase.Models;
 using PotatoVN.App.PluginBase.Helper;
@@ -18,7 +17,7 @@ namespace PotatoVN.App.PluginBase
         {
             Id = new Guid("57ca448f-675c-4461-bfd2-efb9810d1051"),
             Name = "旧版游戏详情页",
-            Description = "提供一个类似于PotatoVN 1.8以前版本的游戏详情页。\n曾经这个功能内嵌在软件本体中，现分拆成本插件提供。",
+            Description = "提供一个类似于PotatoVN 1.8版本以前的游戏详情页。\n曾经这个功能内嵌在软件本体中，现分拆到本插件里。",
         };
 
         public async Task InitializeAsync(IPotatoVnApi hostApi)
@@ -39,6 +38,7 @@ namespace PotatoVN.App.PluginBase
                 }
             }
 
+            _data.Normalize(); // 兼容旧数据/字段缺失/PanelOrder 为 null 等情况
             _data.PropertyChanged += (_, _) => SaveData(); // 当Observable属性变化时自动保存数据，对于普通属性请手动调用SaveData
 
 

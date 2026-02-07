@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using GalgameManager.Enums;
 using GalgameManager.Models;
-using GalgameManager.WinApp.Base.Contracts;
 using GalgameManager.WinApp.Base.Contracts.NavigationApi;
 using GalgameManager.WinApp.Base.Contracts.NavigationApi.NavigateParameters;
 using GalgameManager.WinApp.Base.Contracts.PluginUi;
@@ -22,27 +21,49 @@ public partial class Plugin : IGalgamePage, IGalgamePageSetting,
 {
     public async Task SettingAsync()
     {
-        PageSettingDialog dialog = new();
+        var dialog = new PageSettingDialog(_data);
         await dialog.ShowAsync();
+        if (dialog.IsPrimaryButtonClicked) SaveData();
     }
 
     public async Task<FrameworkElement> CreateUiAsync(Galgame game)
     {
         await Task.CompletedTask;
+
+        var stack = new StackPanel();
+
+        var panels = new Dictionary<PanelType, FrameworkElement>
+        {
+            [PanelType.Header] = new HeaderPanel(game, actions: this),
+            [PanelType.Description] = new DescriptionPanel(game),
+            [PanelType.Tag] = new TagPanel(game, actions: this),
+            [PanelType.Character] = new CharacterPanel(game, actions: this),
+            [PanelType.Staff] = new StaffPanel(game, provider: this, actions: this),
+        };
+
+        bool IsEnabled(PanelType p) => p switch
+        {
+            PanelType.Description => _data.ShowDescription,
+            PanelType.Tag => _data.ShowTag,
+            PanelType.Character => _data.ShowCharacter,
+            PanelType.Staff => _data.ShowStaff,
+            PanelType.Header => true,
+            _ => true,
+        };
+
+        foreach (var panel in _data.Order)
+        {
+            if (!panels.TryGetValue(panel, out var element))
+                continue;
+            if (!IsEnabled(panel))
+                continue;
+            stack.Children.Add(element);
+        }
+        
         ScrollViewer main = new()
         {
             IsTabStop = true,
-            Content = new StackPanel
-            {
-                Children =
-                {
-                    new HeaderPanel(game, actions: this),
-                    new DescriptionPanel(game),
-                    new TagPanel(game, actions: this),
-                    new CharacterPanel(game, actions: this),
-                    new StaffPanel(game, provider: this, actions: this),
-                }
-            }
+            Content = stack
         };
 
         return main;
