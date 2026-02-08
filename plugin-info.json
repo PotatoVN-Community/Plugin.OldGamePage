@@ -1,0 +1,9 @@
+﻿{
+  "guid": "57ca448f-675c-4461-bfd2-efb9810d1051",
+  "name": "旧版游戏详情页",
+  "description_short": "提供一个类似于PotatoVN 1.8版本以前的游戏详情页。\n曾经这个功能内嵌在软件本体中，现分拆到本插件里。",
+  "description_detailed": "提供一个类似于PotatoVN 1.8版本以前的游戏详情页。\n曾经这个功能内嵌在软件本体中，现分拆到本插件里。",
+  "icon": "icon.png",
+  "developer": "pvn-official",
+  "project_url": "https://github.com/PotatoVN-Community/Plugin.OldGamePage"
+}

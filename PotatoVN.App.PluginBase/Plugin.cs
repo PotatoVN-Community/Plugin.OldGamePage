@@ -40,12 +40,9 @@ namespace PotatoVN.App.PluginBase
 
             _data.Normalize(); // 兼容旧数据/字段缺失/PanelOrder 为 null 等情况
             _data.PropertyChanged += (_, _) => SaveData(); // 当Observable属性变化时自动保存数据，对于普通属性请手动调用SaveData
-
-
-            var window = HostApi.GetMainWindow();
-            if (window == null) return;
-
+            
 #if DEBUG
+            if (HostApi.GetMainWindow() == null) return;
             HarmonyHotReloadPatch.Apply(window, HostApi);
 #endif
         }
